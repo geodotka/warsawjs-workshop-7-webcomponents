@@ -1,0 +1,12 @@
+.media-projector {
+	width: 460px;
+	height: 400px;
+	background-color: #5c0e54;
+	color: yellow;
+	text-align: center;
+}
+
+media-projector-element {
+	width: 400px;
+	height: 300px;
+}

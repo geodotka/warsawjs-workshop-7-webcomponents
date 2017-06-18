@@ -7,7 +7,7 @@ class GithubProfileCardElement extends HTMLElement {
 
     connectedCallback() {
         console.log('GithubProfileCardElement: connectedCallback');
-        let $template = document.currentScript.ownerDocument.querySelector('template').cloneNode(true);
+        let $template = GithubProfileCardElement.DOCUMENT.querySelector('template').cloneNode(true);
         this.shadow.appendChild($template.content);
         let login = this.attributes.login.value;
         Promise.resolve(login)
@@ -76,4 +76,7 @@ class GithubProfileCardElement extends HTMLElement {
         return repo2.stargazers_count - repo1.stargazers_count
     }
 }
+
+GithubProfileCardElement.DOCUMENT = document.currentScript.ownerDocument;
+
 window.customElements.define('github-profile-card-element', GithubProfileCardElement);

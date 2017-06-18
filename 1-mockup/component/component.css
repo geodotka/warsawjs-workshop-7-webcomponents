@@ -1,3 +1,10 @@
+.picture-container {
+	margin: 20px;
+	text-align: center
+	height: 300px;
+	width: 400px;
+}
+
 h1 {
 	font-size: 30px;
 	color: #fff;
