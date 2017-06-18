@@ -1,7 +1,7 @@
-class GeodotkaComponent extends HTMLElement {
+class MockupElement extends HTMLElement {
     constructor() {
         super();
-        console.log('Geodotka created!')
+        console.log('MockupElement created!')
     }
 }
-window.customElements.define('geodotka-component', GeodotkaComponent);
+window.customElements.define('mockup-element', MockupElement);
