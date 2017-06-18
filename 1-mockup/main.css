@@ -2,3 +2,16 @@ body {
 	background-color: #5c0e54;
 	color: yellow;
 }
+
+div {
+	text-align: center;
+	display: flex;
+}
+
+mockup-element {
+	margin: 20px;
+}
+
+h1 {
+	font-size: 20px;
+}

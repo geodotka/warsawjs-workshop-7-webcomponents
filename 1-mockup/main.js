@@ -9,6 +9,7 @@ class MockupElement extends HTMLElement {
         console.log('connectedCallback');
         let $template = document.querySelector('template').cloneNode(true);
         this.shadow.appendChild($template.content);
+        this.shadow.querySelector('h1').innerHTML = this.attributes.label.value;
         this.shadow.querySelector('img').src = this.attributes.image.value;
     }
 }
