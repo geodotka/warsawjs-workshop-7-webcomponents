@@ -1,0 +1,31 @@
+h1 {
+	font-size: 30px;
+	color: #fff;
+	text-align: center;
+}
+
+img {
+	height: 100px;
+	margin-right: 20px;
+	border: solid 1px #fff;
+}
+
+.user {
+	display: flex;
+}
+
+.user-info {
+	position: relative;
+	width: 100%;
+}
+
+.location {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+li {
+	list-style: none;
+	margin-left: -40px;
+}
