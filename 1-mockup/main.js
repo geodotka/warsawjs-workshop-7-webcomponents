@@ -7,7 +7,8 @@ class MockupElement extends HTMLElement {
 
     connectedCallback() {
         console.log('connectedCallback');
-        this.shadow.innerHTML = document.querySelector('template').innerHTML;   // funkcja textContent działa podobnie, ale pomija znaczniki
+        let $template = document.querySelector('template').cloneNode(true);
+        this.shadow.appendChild($template.content);
         this.shadow.querySelector('img').src = this.attributes.image.value;
     }
 }
